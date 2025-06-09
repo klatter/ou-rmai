@@ -2153,51 +2153,6 @@ results_df = train_all_models()
     Skipping yolo12s, already completed.
     
 
-**Printing results**
-
-
-```python
-# import numpy as np
-# import matplotlib.pyplot as plt
-
-# def print_results(results_df):
-#     print("\n\033[1mTraining Complete! Results:\033[0m")
-#     print(results_df)
-
-#     # Plot mAP50 vs Model Size
-#     plt.figure(figsize=(12, 7))
-#     x = results_df['map50']
-#     y = results_df['size_mb']
-#     labels = results_df['model']
-
-#     plt.scatter(x, y, s=120, alpha=0.7)
-
-#     # Offset labels to avoid overlap
-#     for i, label in enumerate(labels):
-#         # Alternate label positions for better separation
-#         dx = 0.002 if i % 2 == 0 else -0.002
-#         dy = 0.1 if i % 3 == 0 else -0.1
-#         plt.annotate(label, (x.iloc[i] + dx, y.iloc[i] + dy), fontsize=10, alpha=0.9)
-
-#     plt.title('mAP50 vs Model Size (TACO Dataset)', fontsize=15)
-#     plt.xlabel('mAP50', fontsize=13)
-#     plt.ylabel('Model Size (MB)', fontsize=13)
-#     plt.yscale('log')
-#     plt.grid(True, linestyle='--', alpha=0.6)
-#     plt.tight_layout()
-#     plt.savefig(os.path.join(RESULTS_DIR, "map50_vs_size.png"), dpi=300)
-#     plt.show()
-
-#     # Comparison table
-#     paper_results = results_df[results_df['model'].isin(PAPER_MODELS.keys())]
-#     new_results = results_df[results_df['model'].isin(NEW_MODELS.keys())]
-#     print("\n\033[1mPaper Models vs New Models:\033[0m")
-#     print(pd.concat([paper_results, new_results]).sort_values('map50', ascending=False))
-
-# print_results(results_df)
-
-```
-
 ## Results
 
 
