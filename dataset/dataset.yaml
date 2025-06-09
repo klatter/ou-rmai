@@ -1,0 +1,15 @@
+# Dataset info:
+# year: 2019
+# version: None
+# description: TACO
+# contributor: None
+# url: None
+# date_created: 2019-12-19T16:11:15.258399+00:00
+
+train: ./train/images
+val: ./valid/images
+test: ./test/images
+
+nc: 1
+names: ['litter']
+title: TACO-1
